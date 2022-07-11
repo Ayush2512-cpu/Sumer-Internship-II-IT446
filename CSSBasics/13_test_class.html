@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Class</title>
+    <style>
+        h1{
+            color:red;
+        }
+        .hello{
+            color:blue;
+        }
+        /* IMPORTANT HAS HIGHER PRIORITY THEN SPECIFIC CLASS NAME AND THEN TAG NAME */
+        h2{
+            color:red !important;
+        }
+        .hello2{
+            color:blue;
+        }
+        /* display remove from doc */
+        h3{
+            display: none;
+        }
+        /* visibility remove but there remains a space */
+        h4{
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="hello">Hello World</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nulla enim a, unde maxime quis nobis!
+            Expedita animi eos molestiae quos at, temporibus quod excepturi nemo doloremque exercitationem ipsum in.
+        </p>
+    </div>
+    <div >
+        <h2 class="hello2">Hello World</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nulla enim a, unde maxime quis nobis!
+            Expedita animi eos molestiae quos at, temporibus quod excepturi nemo doloremque exercitationem ipsum in.
+        </p>
+    </div>
+    <div class="hello3">
+        <h3>Hello World</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nulla enim a, unde maxime quis nobis!
+            Expedita animi eos molestiae quos at, temporibus quod excepturi nemo doloremque exercitationem ipsum in.
+        </p>
+    </div>
+    <div class="hello4">
+        <h4>Hello World</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nulla enim a, unde maxime quis nobis!
+            Expedita animi eos molestiae quos at, temporibus quod excepturi nemo doloremque exercitationem ipsum in.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* from root we can use this variables anywhere in this file  */
+        :root{
+            --max-width:1000px;
+            --light-color : #f4f4f4;
+            --primary-color :steelblue;
+            --secondary-color:skyblue;
+            --primary2-color :orange;
+            --secondary2-color:yellow;
+            }
+
+            /* this variables can only be used in containers box only */
+            .container__box{
+                --box-1-width:3;
+                --box-2-widht:1;
+            }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+
+            text-align: center;
+            
+        }
+        .container{
+            display: flex;
+            margin: auto;
+            max-width:var(--max-width);
+        }
+        .container__box{
+          background-color: var(--primary-color);
+          border-bottom: 5px var(--secondary-color) solid;
+          color:#fff;
+          padding: 1rem;
+          margin: 1rem;
+        }
+        .container__box-1{
+            flex:var(--box-1-width)
+        }
+        .container__box-2{
+            flex:var(--box-2-widht)
+        }
+
+
+
+
+
+
+
+        .container2{
+            display: flex;
+            margin: auto;
+            max-width:var(--max-width);
+        }
+        .container2__box{
+          background-color: var(--primary2-color);
+          border-bottom: 5px var(--secondary2-color) solid;
+          color:#fff;
+          padding: 1rem;
+          margin: 1rem;
+        }
+        .container2__box-1{
+            flex:var(--box-1-width)
+        }
+        .container2__box-2{
+            flex:var(--box-2-widht)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+    <div class="container">
+        <div class="container__box container__box-1">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel nemo corporis commodi saepe adipisci
+                fugit quo sed, incidunt cumque!</p>
+        </div>
+        <div class="container__box container__box-2">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel nemo corporis commodi saepe adipisci
+                fugit quo sed, incidunt cumque!</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="container2__box container2__box-1">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel nemo corporis commodi saepe adipisci
+                fugit quo sed, incidunt cumque!</p>
+        </div>
+        <div class="container2__box container2__box-2">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel nemo corporis commodi saepe adipisci
+                fugit quo sed, incidunt cumque!</p>
+        </div>
+    </div>
+</body>
+
+</html>

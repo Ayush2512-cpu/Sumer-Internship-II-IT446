@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" container__content="IE=edge">
+    <meta name="viewport" container__content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 'container__header container__header container__header'
+                                  'container__content container__content container__sidebar'
+                                  'container__box-1 container__box-2 container__box-3'
+                                  'container__footer container__footer container__footer';
+            grid-gap: 1rem;                      
+        }
+        .container__header{
+            grid-area: container__header;
+            text-align: center;
+        }
+        .container__content{
+            grid-area: container__content;
+        }
+        .container__sidebar{
+            grid-area: container__sidebar;
+        }
+        .container__box-1{
+            grid-area: container__box-1;
+        }
+        .container__box-2{
+            grid-area: container__box-2;
+        }
+        .container__box-3{
+            grid-area: container__box-3;
+        }
+        .container__footer{
+            grid-area: container__footer;
+            text-align: center;
+        }
+        .container__header,.container__content,.container__box-1,.container__box-2,.container__box-3,.container__footer,.container__sidebar{
+            /* text-align: center; */
+            border: 1px solid black;
+        }
+        h1,h3{
+            text-align: center;
+        }
+        li{
+           padding:auto 
+        }
+        @media (max-width:500px)
+        {
+            .container{
+                grid-template-areas: 'container__header '
+                                  'container__content '
+                                  'container__sidebar'
+                                  'container__box-1 '
+                                  'container__box-2'
+                                  'container__box-3'
+                                  'container__footer';
+    
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <container__header class="container__header">
+            <h1>My Website</h1>
+        </container__header>
+        <section class="container__content">
+            <h3>Welcome To My Site</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, alias cum nostrum quisquam ipsa
+                perspiciatis voluptatum officia, ab maiores amet nemo quae perferendis nobis, in natus. Atque debitis
+                non nesciunt ab quia soluta illum delectus quibusdam temporibus odit doloribus veniam vero sed, placeat
+                autem molestiae. Dolore ipsum natus corrupti quis?
+            </p>
+        </section>
+        <aside class="container__sidebar">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Some Company</li>
+                <li>50 Main st, Boston MA</li>
+                <li>something@something.com</li>
+                <li>555-555-555</li>
+            </ul>
+        </aside>
+        <div class="container__box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora impedit eaque officiis quasi
+                eligendi sequi consectetur a eum cum.</p>
+        </div>
+        <div class="container__box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora impedit eaque officiis quasi
+                eligendi sequi consectetur a eum cum.</p>
+        </div>
+        <div class="container__box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora impedit eaque officiis quasi
+                eligendi sequi consectetur a eum cum.</p>
+        </div>
+
+
+    <container__footer class="container__footer"><p>Copyright &copy
+    2019</p></container__footer>
+
+
+</div>
+</body>
+
+</html>

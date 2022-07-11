@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .item{
+            background: #f4f4f4;
+            border:1px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin:10px;
+            text-align: center;
+            border-radius: 10px;
+            /* flex:1; */
+        }
+        .flex-container{
+            display: flex;
+            /* screen became smaller some box goes to next line */
+            flex-wrap: wrap;
+            background-color: #f4f4f4;
+            flex-direction: row;
+            align-items:center;
+            /* cross axis align */
+            /* align-items: stretch; */
+            justify-content: center;
+            height: 50vh;
+            border:red 1px solid;
+        }
+        .flex-container2{
+            display: flex;
+            /* screen became smaller some box goes to next line */
+            flex-wrap: wrap;
+            background-color: #f4f4f4;
+            flex-direction: column;
+            align-items:center;
+            /* cross axis align */
+            /* align-items: stretch; */
+            justify-content: space-around;
+            border:green 1px solid;
+            
+        }
+        /* .item-1{
+            flex-direction: row;
+            align-items:center;
+            align-self: flex-start;
+            justify-content: flex-start;
+        }
+        .item-2{
+          
+        } */
+        .item-5{
+            flex-direction: column;
+            align-items: center;
+            justify-items: flex-end;
+            align-self: flex-end;
+            border:red 1px solid;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <h3 class="item item-1">Item1</h3>
+        <h3 class="item item-2">Item2</h3>
+        <h3 class="item item-3">Item3</h3>
+        <div class="flex-container2">
+            <h3 class="item item-4">Item4</h3>
+            <h3 class="item item-5">Item5</h3>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh & vw</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+           
+        }
+        
+        header{
+            background: url('https://images.unsplash.com/photo-1654127655332-991c3f5f09c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' ) no-repeat center center/cover;
+            height:100vh;
+            color: white;
+            text-align: center;
+            padding:2rem;
+            padding-top:15rem;
+        }
+        header p{
+            padding:20px;
+            margin-bottom: 40px;
+
+        }
+        header .btn{
+            /* doubt */
+            margin-top: 40px;
+
+            padding: 20px;
+            text-decoration: none;
+            background: white;
+            color: black;
+
+        }
+        @media (max-width:500px)
+        {
+            header{
+                padding-top:5rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcom To Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio error nesciunt sapiente esse ea eligendi
+            reiciendis nisi itaque cupiditate.</p>
+        <a href="#" class="btn">About Our Website</a>
+    </header>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos pariatur possimus aliquam inventore
+            non mollitia? Facere corrupti, doloremque consequuntur veritatis laborum atque eum illum magni est
+            reiciendis ab quis! Officiis cum quasi qui necessitatibus accusamus voluptate itaque, illo id.</p>
+    </section>
+</body>
+
+</html>

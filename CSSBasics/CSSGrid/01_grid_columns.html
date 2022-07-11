@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+    <style>
+        .grid {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: auto 200px 200px; */
+            /* grid-template-columns: auto auto auto; */
+            /* if it is repeating then use this repeat(no of times ,size) */
+            /* grid-template-columns: repeat(3,auto); */
+            /* grid-template-rows: repeat(3,200px); */
+            /* used with different unit called fraction */
+            grid-template-columns: 1fr 2fr 2fr;
+            /* grid-gap works same as margin */
+            grid-gap: 1rem;
+
+
+        }
+
+        .item {
+            padding: 20px;
+            padding-left: 50%;
+            border: 1px rgb(191, 26, 26) solid;
+            background-color: rgb(172, 51, 51);
+        }
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+           grid-gap: 2rem;
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <div class="grid">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+    </div>
+
+
+    <main>
+        <section>
+            <h1>Heading</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores sequi sapiente veniam fugit deleniti
+            quasi amet ut odit corporis doloribus dolor consequuntur qui laudantium vel cumque nam at, consectetur nihil
+            tenetur deserunt possimus! Sequi libero velit aliquam dolorum! Itaque quibusdam cumque esse maxime ut iusto
+            recusandae necessitatibus? Nostrum, laborum.
+        </section>
+        <aside>
+            <h1>Heading</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nobis ipsum aliquid numquam ipsa
+            architecto, iure ad temporibus veritatis quas ipsam accusamus necessitatibus exercitationem dolor,
+            praesentium iste eius distinctio consequuntur.
+        </aside>
+    </main>
+</body>
+
+</html>
